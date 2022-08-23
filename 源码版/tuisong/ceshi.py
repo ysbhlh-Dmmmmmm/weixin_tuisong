@@ -2,7 +2,7 @@
 import http.client, urllib
 import json      #引入json库
 conn = http.client.HTTPSConnection('api.tianapi.com')  #接口域名
-params = urllib.parse.urlencode({'key':'填入你的key'})
+params = urllib.parse.urlencode({'key':'1e2785d13f3217c759e2220bc2ff44dc'})
 headers = {'Content-type':'application/x-www-form-urlencoded'}
 conn.request('POST','/lzmy/index',params,headers)
 res = conn.getresponse()
